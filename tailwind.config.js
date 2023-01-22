@@ -8,6 +8,7 @@ module.exports = {
       fontFamily:{
         'ubuntu': ['Ubuntu', 'sans-serif'],
         'tangerine':['Tangerine', 'cursive'],
+        'garamond':['EB Garamond', 'sans-serif'],
       }
     },
   },
