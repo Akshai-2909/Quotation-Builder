@@ -10,14 +10,19 @@ function Counter() {
   const decrement = () => {
     setCount(count - 1);
   };
+
+  const [enable, setEnable] = useState(false);
+  const addEvents = () => {
+    setEnable(!enable);
+  };
   return (
-    <div className="flex">
-      <button className="btn btn-blue" onClick={decrement}>
-        <img className="w-4 h-4" src={minus}></img>
+    <div className="flex ml-8">
+      <button className=" p-1 btn btn-blue">
+        <img className="w-4 h-4" src={minus} onClick={increment}></img>
       </button>
-      <p>{count}</p>
-      <button className="btn btn-blue" onClick={increment}>
-        <img className="w-4 h-4" src={plus}></img>
+      <p className="p-1">{count}</p>
+      <button className="p-1 btn btn-blue">
+        <img className="w-4 h-4" src={plus} onClick={increment}></img>
       </button>
     </div>
   );
