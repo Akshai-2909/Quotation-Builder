@@ -6,6 +6,7 @@ function SingleEvent(eventname) {
   const addEvents = () => {
     setEnable(!enable);
   };
+  console.log(`The value is ${enable}`);
   return (
     <>
       <input
