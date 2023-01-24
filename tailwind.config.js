@@ -5,8 +5,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+    colors:{
+      'mild-violet': '#5f0aa8',
+    },
       fontFamily:{
         'ubuntu': ['Ubuntu', 'sans-serif'],
+        'poppins': ['Poppins','sans-serif'],
         'tangerine':['Tangerine', 'cursive'],
         'garamond':['EB Garamond', 'sans-serif'],
       }
